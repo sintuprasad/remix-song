@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../first1.css" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* body {
+        background: url("crossfade.jpg");
+        background-size: cover;
+        opacity: 1;
+        background-repeat: no-repeat;
+    } */
+    body {
+      background-color: rgb(255, 255, 255);
+    }
+
+    .contenar {
+      width: 98%;
+      height: auto;
+      margin: auto;
+      box-sizing: border-box;
+      border-radius: 5px;
+      padding: 15px 10px;
+      border: 1px solid rgb(207, 207, 207);
+      background-color: #ffffff21;
+      box-sizing: border-box;
+      box-shadow: rgba(193, 194, 194, 0.897) 0px 5px 2px 1px;
+    }
+
+    .title {
+      height: auto;
+      width: auto;
+    }
+
+    .title label {
+      position: relative;
+      font-size: 1.5rem;
+      text-align: center;
+      color: rgb(255, 0, 0);
+    }
+
+    .title input[type="text"] {
+      position: relative;
+      height: 30px;
+      width: 98%;
+      margin: auto;
+      padding: 5px;
+      background: #f7f4f4ab;
+      outline: none;
+      font-size: 20px;
+      font-weight: 600;
+      border-radius: 5px;
+      border: 1px solid rgb(145, 143, 143);
+    }
+
+    .title input[type="text"]:hover {
+      background: #f7f4f4e8;
+    }
+
+    .title textarea {
+      position: relative;
+      height: 150px;
+      width: 98%;
+      margin: 2px;
+      padding: 5px;
+      background: #f7f4f4ab;
+      outline: none;
+      font-size: 20px;
+      font-weight: 600;
+      border-radius: 5px;
+      border: 1px solid rgb(133, 131, 131);
+      overflow-x: none;
+    }
+
+    .img-upload {
+      position: relative;
+      margin-right: 10px;
+      text-align: center;
+      margin: auto;
+    }
+
+    .img-upload label {
+      position: relative;
+      padding: 2px;
+      background-color: rgba(238, 34, 34, 0.158);
+      color: rgb(255, 255, 255);
+      border: 1px solid red;
+      border-radius: 5px;
+    }
+    .img-upload label:hover {
+      background-color: red;
+      color: white;
+    }
+
+    .title input[type="file"] {
+      position: relative;
+      height: 150px;
+      width: 200px;
+      margin: 5px;
+      border: 1px solid rgb(133, 131, 131);
+      justify-content: center;
+      align-items: center;
+    }
+
+    #output {
+      position: relative;
+      height: 150px;
+      width: 200px;
+      display: block;
+    }
+
+    .song_detail {
+      height: auto;
+    }
+
+    .def-data input[type="text"] {
+      position: relative;
+      margin: auto;
+      width: 90%;
+      height: 20px;
+      padding: 2px;
+      outline: none;
+      font-size: 13px;
+      font-weight: 500;
+      border-radius: 5px;
+      border: 1px solid rgb(145, 143, 143);
+    }
+
+    .post {
+      position: relative;
+      margin: auto;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    button {
+      position: relative;
+      margin: 0;
+      padding: 10px;
+      height: 40px;
+      width: auto;
+      color: aliceblue;
+      background-color: red;
+      border-radius: 5px;
+      border: 1px solid rgb(145, 143, 143);
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 330px) {
+      .youtube_details {
+        width: 100%;
+      }
+
+      .title input[type="text"] {
+        font-size: 0.7rem;
+      }
+
+      .title textarea {
+        font-size: 0.7rem;
+      }
+
+      .deta-data .default h4 {
+        font-size: 12px;
+      }
+
+      .title label {
+        font-size: 1em;
+      }
+    }
+  </style>
+
+  <body>
+    <div class="contenar">
+      <div class="title">
+        <label>Title :</label>
+        <input type="text" placeholder="Title" />
+      </div>
+
+      <div class="title">
+        <label>Description :</label>
+        <textarea type="text"></textarea>
+      </div>
+
+      <div class="youtube_details">
+        <div class="img-upload">
+          <form action="upload.php" method="post" enctype="multipart/form-data">
+            <label
+              for="file"
+              style="cursor: pointer; color: rgb(255, 0, 0)"
+              id="ltext"
+              >upload IMG</label
+            >
+            <input
+              type="file"
+              accept="image/*"
+              name="image"
+              id="file"
+              onchange="loadFile(event)"
+              style="display: none"
+            />
+
+            <img id="output" />
+          </form>
+        </div>
+
+        <script></script>
+
+        <div class="song_detail">
+          <h3>fill Details</h3>
+
+          <div class="deta-data">
+            <div class="default">
+              <h4>Album</h4>
+            </div>
+
+            <div class="def-data">
+              <form action="###.php" method="post">
+                <input type="text" />
+              </form>
+            </div>
+          </div>
+
+          <div class="deta-data">
+            <div class="default">
+              <h4>Singers</h4>
+            </div>
+            <span>:</span>
+            <div class="def-data">
+              <form action="###.php" method="post">
+                <input type="text" />
+              </form>
+            </div>
+          </div>
+
+          <div class="deta-data">
+            <div class="default">
+              <h4>Dj Remixers</h4>
+            </div>
+            <span>:</span>
+            <div class="def-data">
+              <form action="###.php" method="post">
+                <input type="text" />
+              </form>
+            </div>
+          </div>
+          <div class="deta-data">
+            <div class="default">
+              <h4>Size</h4>
+            </div>
+            <span>:</span>
+            <div class="def-data">
+              <form action="###.php" method="post">
+                <input type="text" />
+              </form>
+            </div>
+          </div>
+
+          <div class="deta-data">
+            <div class="default">
+              <h4>Duration</h4>
+            </div>
+            <span>:</span>
+            <div class="def-data">
+              <form action="###.php" method="post">
+                <input type="text" />
+              </form>
+            </div>
+          </div>
+
+          <div class="deta-data">
+            <div class="default">
+              <h4>Year</h4>
+            </div>
+            <span>:</span>
+            <div class="def-data">
+              <form action="###.php" method="post">
+                <input type="text" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="post">
+        <button id="submit" value="post" name="post">Publish</button>
+      </div>
+    </div>
+  </body>
+  <script>
+    var loadFile = function (event) {
+      var image = document.getElementById("output");
+      image.src = URL.createObjectURL(event.target.files[0]);
+    };
+  </script>
+</html>

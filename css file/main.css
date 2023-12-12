@@ -1,0 +1,802 @@
+@import url("https://fonts.googleapis.com/css?family=Sofia|Trirong|jost|Vollkorn|Nnito");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css");
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins" sans-serif;
+}
+a {
+  cursor: pointer;
+}
+a :active {
+  color: crimson;
+}
+
+h2 {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: red;
+  background-color: rgb(250, 244, 212);
+  margin-bottom: 2px;
+}
+.h2 {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: red;
+  background-color: rgb(250, 244, 212);
+  margin-bottom: 2px;
+}
+/*
+.sticky {
+    background:rgb(255, 255, 255 );
+    border-bottom: 2px solid #5410da52;
+} */
+/* BANNER CONTENT */
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("..\\image\\web_pic\\crossfade.jpg");
+  background-size: cover;
+  opacity: 1;
+}
+.banner .content {
+  font-weight: 900px;
+  text-align: center;
+  margin-top: 70px;
+}
+.banner .content .dj-big_logo {
+  height: 150px;
+  width: 150px;
+  border-radius: 50% 50%;
+  border: 1px solid rgb(248, 31, 31);
+  box-shadow: rgba(255, 0, 0, 0.952) 0px 0px 50px 20px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.banner .content .dj-big_logo img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.banner .content h2 {
+  color: #fff;
+  font-size: 5em;
+  font-weight: 1000;
+  background-color: transparent;
+  font-family: "sofia" serif;
+}
+.banner .content p {
+  font-size: 2em;
+  font-weight: 300;
+  color: white;
+  font-family: "Acme";
+}
+
+.banner .content h3 {
+  color: rgb(247, 223, 7);
+  font-size: 2.5em;
+  margin-top: 15px;
+  background-color: #fefdff21;
+  text-shadow: #fcf9f9f1;
+  border-radius: 5px;
+}
+.social-icons {
+  position: relative;
+  height: 50px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.social-icons a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: rgb(255, 0, 0);
+  padding: 15px;
+  margin-top: 2px;
+}
+.social-icons a:hover {
+  font-size: 2.5rem;
+}
+
+.marquee_content {
+  position: relative;
+  margin-top: 3px;
+  height: 120px;
+  width: 100%;
+  margin-bottom: 1.5px;
+
+  overflow: hidden;
+  background-image: linear-gradient(to top, #e84444bd, #95e3fb85);
+}
+.marquee_content marquee img {
+  height: 120px;
+  width: 190px;
+  margin: auto;
+}
+:host {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+marquee {
+  display: inline-block;
+  width: -webkit-fill-available;
+}
+/* paragraph */
+.para-details {
+  height: auto;
+  width: 99%;
+  justify-content: center;
+
+  margin: auto;
+  background-image: linear-gradient(to left, rgb(255, 0, 0), rgb(9, 4, 250));
+}
+.para-details p {
+  font-family: "Righteous";
+  font-size: 1rem;
+  justify-content: center;
+  color: cornsilk;
+  padding: 5px;
+}
+
+/* NEW /LEATEST LIST*/
+
+.new-mp3-list {
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin: auto;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: rgba(243, 243, 253, 0.774);
+  display: block;
+  margin-bottom: 2px;
+  align-items: center;
+}
+
+.new-mp3-list .list-items:hover {
+  /* box-shadow: rgb(199, 228, 228) 1px 4px 5px 0px; */
+  box-shadow: rgba(0, 0, 0, 0.36) 0px 1px 5px 0px;
+}
+.new-mp3-list .list-items {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  margin: auto;
+  margin-bottom: 5px;
+  border: 1px solid rgba(221, 221, 221, 0.966);
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+}
+.new-mp3-list .list-items .song-poster {
+  position: relative;
+  height: 150px;
+  width: 320px;
+  margin: 2px;
+  padding: 0px;
+  align-items: center;
+}
+.list-items .song-poster img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  margin: auto;
+  padding: 1px;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-mp3-list .list-items .song-title {
+  position: relative;
+  width: 100%;
+  float: right;
+  padding: 1px;
+  margin: 3px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.new-mp3-list .list-items .song-title h1 {
+  position: relative;
+  font-size: 1.3rem;
+  font-family: "Vollkorn", serif;
+  display: inline-block;
+  font-weight: bold;
+}
+.new-mp3-list .list-items .song-title h1 a {
+  position: relative;
+  text-decoration: none;
+  color: rgb(9, 9, 161);
+}
+.new-mp3-list .list-items .song-title h3 {
+  position: relative;
+
+  color: #ab0000;
+}
+.song-title-ary {
+  margin-top: 5px;
+}
+.new-mp3-list .list-items .song-title h3 {
+  position: relative;
+  font-size: 1em;
+  padding: 2px;
+  font-weight: 700;
+}
+
+.singer_list {
+  position: relative;
+  width: 99.5%;
+  height: auto;
+  display: flex;
+  overflow-x: auto;
+  margin: auto;
+  padding: 2px;
+}
+
+.singer_list a {
+  text-decoration: none;
+}
+.singer_list .s_pic-name:hover {
+  /* border: 1px solid red; */
+  background-color: red;
+  box-shadow: rgb(248, 31, 31) 0 5px 10px 0px;
+  color: #fff;
+}
+.singer_list .s_pic-name {
+  position: relative;
+  border: 1px solid rgb(202, 200, 200);
+  border-radius: 5px;
+  height: 105px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+  padding: 3px;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to top,
+    rgba(250, 19, 19, 0.322),
+    rgb(255, 255, 255),
+    rgb(241, 238, 47)
+  );
+}
+.singer_list .s_pic-name .s_pic {
+  position: relative;
+  height: 70px;
+  width: 70px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 1rem;
+}
+.singer_list .s_pic-name .s_pic img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 50% 50%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+.singer_list .s_pic-name h3 {
+  position: relative;
+  text-align: center;
+  font-size: 0.7rem;
+  margin: 3px;
+  padding: 2px;
+  color: #fff;
+  text-shadow: 0px 1px 15px rgb(63 61 61 / 97%);
+}
+.singer_list a .s_pic-name:hover {
+  color: #fff;
+}
+
+.song_categary {
+  position: relative;
+  height: auto;
+  width: 100%;
+  padding: 5px;
+  /*  margin-top: 5px;
+    margin-bottom: 5px;*/
+  border: 1px solid rgb(235, 235, 235);
+  background-color: white;
+}
+.song_categary a {
+  text-decoration: none;
+  margin: auto;
+  font-family: "outfit", sans-serif;
+  text-shadow: 3px 3px 3px #f733330e;
+
+  display: flex;
+  flex-wrap: nowrap;
+}
+.song_categary a .bi {
+  float: right;
+  color: blue;
+  font-size: 1.5rem;
+}
+/* .song_categary a :hover {
+  font-weight: 550;
+  text-shadow: none;
+} */
+.song_categary a .categary:hover {
+  /* background-color: rgba(255, 0, 0, 0.747); */
+  border: 1px solid blueviolet;
+}
+
+.song_categary a .categary {
+  position: relative;
+  height: auto;
+  width: 97%;
+  margin: auto;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding: 5px 10px;
+  font-family: inherit;
+  font-size: 1.2rem;
+  border: 1px solid rgba(236, 236, 236, 0.911);
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: rgb(0 0 0 / 3%) 0px 1px 10px 4px;
+  background-color: white;
+}
+
+/* END PART */
+footer {
+  position: relative;
+  width: 98%;
+  height: auto;
+  margin: 10px;
+  margin: auto;
+  flex-wrap: wrap;
+  /* border: 1px solid rgb(102, 85, 85); */
+  border-radius: 10px;
+}
+footer .menu {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+  padding: 2px;
+  justify-content: center;
+}
+ul li {
+  list-style: none;
+  margin: 5px;
+}
+ul li a {
+  text-decoration: none;
+  color: rgb(255, 0, 0);
+}
+ul li a:hover,
+ul li a:active {
+  color: rgb(255, 255, 255);
+  border-radius: 2px;
+  background-color: rgba(252, 27, 27, 0.897);
+}
+footer P {
+  position: relative;
+  color: rgb(255, 0, 0);
+  font-size: 1rem;
+  font-family: sans-serif;
+  text-align: center;
+}
+footer p a {
+  color: red;
+  font-weight: 600;
+}
+/* INDEX-2 CSS */
+
+.index-2_banner {
+  position: relative;
+  min-height: 50vh;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: url("..\\image\\web_pic\\crossfade2.jpg");
+  background-size: cover;
+  opacity: 1;
+}
+.index-2_banner .content {
+  position: relative;
+  height: auto;
+  width: 95%;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.index-2_banner .content .dj-big_logo {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border-radius: 50% 50%;
+  border: 1px solid black;
+  margin: 20px;
+  padding: 0;
+}
+.index-2_banner .content .dj-big_logo img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 50% 50%;
+}
+.index-2_banner .content h2 {
+  color: #fff;
+  font-size: 3em;
+  background-color: transparent;
+}
+.index-2_banner .content p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: white;
+}
+
+/* search bar style */
+form {
+  height: 25px;
+  width: 250px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+input[type="text"] {
+  position: relative;
+  padding: 0;
+  margin: 0%;
+  font-size: 15px;
+  border: 1px solid grey;
+  width: 80%;
+  float: left;
+  background: #f1f1f1;
+  outline: none;
+}
+
+.shearch_box button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  color: white;
+  font-size: 17px;
+  border-left: none;
+}
+
+.shearch .shearch_box button:hover {
+  background: #0b7dda;
+  cursor: pointer;
+}
+
+/* .shearch_box::after{
+content: "";
+clear: both;
+display: table;
+
+} */
+
+.mp3_details {
+  position: relative;
+  height: auto;
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(223, 221, 221);
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.36) 0px 1px 5px 0px;
+}
+.mp3_details .category_title {
+  position: relative;
+  border: 1px solid rgb(247, 208, 208);
+  height: auto;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 5px;
+  padding: 1.5px;
+}
+.category_title .category {
+  position: relative;
+  margin: 2px;
+  font-size: 1rem;
+  font-weight: 900;
+  color: rgba(255, 54, 4, 0.918);
+}
+.mp3_details .category_title .title {
+  position: relative;
+}
+.mp3_details .category_title .title h1 {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 800;
+  margin: 5px;
+  font-family: "Nunito", sans-serif;
+  text-size-adjust: 100%;
+  color: rgba(248, 0, 0, 0.849);
+}
+
+.youtube_details {
+  position: relative;
+  height: auto;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.youtube_details .youtubeframe {
+  position: relative;
+  height: 180px;
+  width: 280px;
+  border: 1px solid rgb(248, 219, 219);
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(196, 196, 196);
+  box-shadow: rgb(0 0 0 / 22%) 0px 2px 7px 3px;
+}
+.youtube_details .youtubeframe img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.youtube_details .song_detail {
+  position: relative;
+  height: auto;
+  width: 343px;
+  margin: 5px;
+  padding: 10px 3px;
+  border-radius: 2px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: inset rgb(0 0 0 / 36%) 0px 1px 5px 0px;
+}
+.song_detail .deta-data {
+  position: relative;
+  height: auto;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  padding: 5px 0px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  border: 1px solid rgb(223, 221, 221);
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
+}
+.song_detail p {
+  font-family: "jost";
+}
+.deta-data .default {
+  width: 30%;
+  position: relative;
+  font-weight: 700;
+  float: right;
+}
+.deta-data .default h4 {
+  position: relative;
+  float: right;
+  text-align: end;
+
+  color: rgba(255, 54, 4, 0.918);
+}
+.deta-data span {
+  width: 5%;
+  margin: 0px;
+  position: relative;
+  font-weight: 800;
+  font-family: serif;
+  justify-content: center;
+  color: rgb(38, 0, 255);
+}
+
+.deta-data .def-data {
+  width: 65%;
+  position: relative;
+  font-weight: 700;
+  font-family: serif;
+  float: left;
+}
+
+.deta-data .def-data h4 {
+  position: relative;
+  float: left;
+  font-size: 0.9rem;
+  text-align: start;
+  color: rgba(248, 0, 0, 0.849);
+}
+.song_dowmload-list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  margin: auto;
+  width: 98%;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+.song_dowmload-list .download-list:hover {
+  border: 1px solid rgb(0, 255, 234);
+
+  /* background-image:  linear-gradient(to right,rgb(255, 0, 0), rgb(9, 4, 250));; */
+}
+.song_dowmload-list .download-list {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  border: 1px solid rgb(255, 255, 255);
+  background-image: linear-gradient(to left, rgb(255, 0, 0), rgb(9, 4, 250));
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  font-family: unset;
+  cursor: pointer;
+  margin: 10px;
+  padding: 15px;
+}
+.bi-download {
+  font-size: 1rem;
+  font-weight: 900;
+  margin: 5px;
+}
+
+#ads {
+  margin: 10px;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 350px) {
+  .new-mp3-list .list-items {
+    align-items: center;
+  }
+
+  .social-icons a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .song-title-ary {
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .banner .content h2 {
+    font-size: 3rem;
+  }
+  .banner .content p,
+  .banner .content h3 {
+    font-size: 1.5rem;
+  }
+
+  .banner .content .social-icons a {
+    font-size: 2em;
+    padding: 10px;
+  }
+  .singer_list {
+    width: 98%;
+  }
+  .category_title .category {
+    font-size: 0.8rem;
+  }
+  .mp3_details .category_title .title h1 {
+    font-size: 0.7em;
+  }
+  .new-mp3-list .list-items .song-title h1 {
+    font-size: 0.8em;
+  }
+  .new-mp3-list .list-items .song-title h3 {
+    font-size: 0.7em;
+  }
+  .new-mp3-list .list-items .song-poster {
+    height: 80px;
+    width: 200px;
+    align-items: center;
+  }
+
+  .song-title .song-title-ary {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    justify-content: space-between;
+  }
+
+  .song_categary a .categary {
+    font-size: 1rem;
+  }
+
+  ul li a {
+    font-size: 0.7em;
+  }
+  footer p {
+    font-size: 0.8em;
+  }
+
+  .social-icons a:hover {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .song-title-ary {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .new-mp3-list .list-items .song-title h1 {
+    font-size: 0.5em;
+  }
+  .new-mp3-list .list-items .song-title h3 {
+    font-size: 0.4rem;
+  }
+  .banner .content .dj-big_logo {
+    height: 100px;
+    width: 100px;
+  }
+  .banner .content h2 {
+    font-size: 1rem;
+  }
+  .banner .content p {
+    font-size: 0.7rem;
+    align-items: center;
+    padding: 5px;
+  }
+  .banner .content h3 {
+    font-size: 0.8em;
+  }
+  .banner .content {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .mp3_details {
+    width: 98%;
+  }
+}
